@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="logo"src="./sources/LogoCLB.png">
+    <header>
+        Web design
+    </header>
+    <div class="listdata">
+    </div>
+    <script src="data.js"></script>
+    <script>
+        count = 0;
+        document.querySelector(".listdata").innerHTML = listweb.slice(0,listweb.length).map(e => `
+        <div class="card" id=${e.id}>
+            <div class="flur"></div>
+            <img src=${e.image} alt="">
+            <p class="name">${e.name}</p>
+        </div>
+    `).join("")
+    document.querySelectorAll('.card').forEach(e => e.addEventListener('click', () => {
+        window.location.href = listweb[e.id].url;
+    }))
+    </script>
+</body>
+</html>
