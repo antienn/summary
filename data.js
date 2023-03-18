@@ -35,4 +35,16 @@ var listweb =[
         "image": "./sources/Team4(2).png",
         "url":"https://workanhnguyen.github.io/landingpagedoi4mpc/"
     },
+    {
+        "id":"6",
+        "name": "Tsàn Quý Thành",
+        "image": "./sources/TPstore(2).png",
+        "url":"https://quythanh.tk/tp-store/"
+    },
+    {
+        "id":"7",
+        "name": "Trần An Tiến",
+        "image": "./sources/dreamsneaker.png",
+        "url":"https://supertien12.github.io/dreamsneakers/"
+    },
 ]
